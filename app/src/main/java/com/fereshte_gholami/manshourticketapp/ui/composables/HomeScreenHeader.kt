@@ -32,7 +32,7 @@ fun HomeScreenHeader(modifier: Modifier, onCloseClicked: () -> Unit) {
             modifier = Modifier
                 .clip(CircleShape)
                 .background(White.copy(alpha = 0.4f))
-                .clickable { onCloseClicked }
+                .clickable { onCloseClicked() }
         ){
             Icon(
                 painter = painterResource(id = R.drawable.ic_close),
