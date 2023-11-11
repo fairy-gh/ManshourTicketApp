@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ManshourTicketApp</string>
     <string name="home">Home</string>
+    <string name="available">Available</string>
+    <string name="taken">Taken</string>
+    <string name="selected">Selected</string>
 </resources>

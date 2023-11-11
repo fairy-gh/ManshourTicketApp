@@ -9,4 +9,5 @@ fun HomeScreenSeats(modifier: Modifier,
                     seatsPairs: List<Pair<SeatState, SeatState>>,
                     onSeatClicked: (id: Int) -> Unit){
     SeatLayout(seatPair = seatsPairs, onSeatClicked = onSeatClicked)
+    HomeScreenSeatAvailabilitySection()
 }
