@@ -11,3 +11,13 @@ data class RequestModel(
     val hour: String,
     val day: String
 )
+
+data class SeatState(
+    val id: Int = 0,
+    val isReserved: Boolean = false,
+    val isSelected: Boolean = false
+)
+
+data class HomeUI(
+val seatStateList: List<SeatState> = emptyList()
+)
