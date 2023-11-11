@@ -1,6 +1,8 @@
 package com.fereshte_gholami.manshourticketapp.di
 
 import android.content.SharedPreferences
+import com.fereshte_gholami.manshourticketapp.data.local.HomeRepository
+import com.fereshte_gholami.manshourticketapp.data.local.HomeRepositoryImpl
 import com.fereshte_gholami.manshourticketapp.data.remote.reservation.ReservationApiService
 import com.fereshte_gholami.manshourticketapp.data.remote.reservation.ReservationRepository
 import com.fereshte_gholami.manshourticketapp.data.remote.reservation.ReservationRepositoryImpl
@@ -23,6 +25,10 @@ import javax.inject.Singleton
 class AppModule {
 
     private val baseUrl = "https://run.mocky.io/v3/"
+
+    @Provides
+    @Singleton
+    fun provideHomeRepository(): HomeRepository = HomeRepositoryImpl()
 
     @Provides
     @Singleton
